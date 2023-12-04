@@ -121,7 +121,7 @@ final_uxdx_null_Data.sort_values(by='Date',ascending=True,inplace=True)
 
 #merg all data set
 concat_all_dataset=(pd.concat([final_Gold_Data, final_Crude_Oil_Data,final_uxdx_null_Data],keys=['Gold', 'Crude','uxdx']))
-
+print(concat_all_dataset)
 #Now its time for news
 googlenews=gn.GoogleNews()
 googlenews.set_lang('en')
